@@ -1,1 +1,27 @@
-<p>music works!</p>
+<main>
+  <section>
+    <article>lecteur soundcloud</article>
+    <article>
+      <h2>Album & EP</h2>
+      <div *ngFor="let cd of musicData">
+        <h3>{{ cd.title }}</h3>
+        <img [src]="cd.image" alt="Artwork for  " />
+        <p>Genre: {{ cd.genre }}</p>
+        <ul>
+          <li>
+            <a [href]="cd.soundcloudLink"
+              ><img
+                src="../../assets/img/soundcloud.png"
+                alt="Icon of Soundcloud"
+            /></a>
+          </li>
+          <li>
+            <a [href]="cd.youtubeLink"
+              ><img src="../../assets/img/youtube.png" alt="Icon of Youtube"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
+</main>
