@@ -4,35 +4,33 @@
     "title": "Brotherhood",
     "image": "",
     "genre": "Dub, Dubstep",
-    "soundcloudLink": "",
-    "youtubeLink": "",
-    "bandcampLink": ""
+    "soundcloudLink": "https://soundcloud.com/mareebass/sets/mbep0103brotherhood-psiloshock-system-53",
+    "youtubeLink": "https://youtu.be/LhrQe4zPzeA?si=4Lo38jQvLYmE_6bs"
   },
   {
     "id": 2,
     "title": "Family Reunion",
     "image": "",
     "genre": "Dub, Dubstep, Electro",
-    "soundcloudLink": "",
-    "youtubeLink": "",
-    "bandcampLink": ""
+    "soundcloudLink": "https://soundcloud.com/mareebass/sets/mblp054-family-reunion",
+    "youtubeLink": "https://youtu.be/MlcE7JT9kKg?si=TWOiroPboxR0TM4k",
+    "bandcampLink": "https://psiloshock.bandcamp.com/album/family-reunion"
   },
   {
     "id": 3,
     "title": "Dub In The Dark",
     "image": "",
     "genre": "Dub, Dubstep",
-    "soundcloudLink": "",
-    "youtubeLink": "",
-    "bandcampLink": ""
+    "soundcloudLink": "https://soundcloud.com/loiclion/sets/dub-in-the-dark-free-download",
+    "youtubeLink": "https://www.youtube.com/watch?v=7xikEDI2QKs&list=PLjPzFn4rFHQHZ_OV0oN0t1IoWSxeFxyPP&ab_channel=PsiloshockDub"
   },
   {
     "id": 4,
     "title": "Space Flower",
     "image": "",
     "genre": "Dub, Electro",
-    "soundcloudLink": "",
-    "youtubeLink": "",
-    "bandcampLink": ""
+    "soundcloudLink": "https://soundcloud.com/loiclion/sets/space-flower-ep-free-download",
+    "youtubeLink": "https://youtu.be/9hUM0V95mws?si=f0P79o92eL9g8YN5",
+    "bandcampLink": "https://psiloshock.bandcamp.com/album/space-flower"
   }
 ]
