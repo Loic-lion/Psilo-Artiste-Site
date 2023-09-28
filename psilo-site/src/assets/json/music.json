@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Brotherhood",
+    "image": "",
+    "genre": "Dub, Dubstep",
+    "soundcloudLink": "",
+    "youtubeLink": "",
+    "bandcampLink": ""
+  },
+  {
+    "id": 2,
+    "title": "Family Reunion",
+    "image": "",
+    "genre": "Dub, Dubstep, Electro",
+    "soundcloudLink": "",
+    "youtubeLink": "",
+    "bandcampLink": ""
+  },
+  {
+    "id": 3,
+    "title": "Dub In The Dark",
+    "image": "",
+    "genre": "Dub, Dubstep",
+    "soundcloudLink": "",
+    "youtubeLink": "",
+    "bandcampLink": ""
+  },
+  {
+    "id": 4,
+    "title": "Space Flower",
+    "image": "",
+    "genre": "Dub, Electro",
+    "soundcloudLink": "",
+    "youtubeLink": "",
+    "bandcampLink": ""
+  }
+]
