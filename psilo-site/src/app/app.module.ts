@@ -6,19 +6,26 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
+import { MusicComponent } from './music/music.component';
+import { TourDateComponent } from './tour-date/tour-date.component';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { PhotoComponent } from './photo/photo.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    MusicComponent,
+    TourDateComponent,
+    AboutMeComponent,
+    ContactMeComponent,
+    PhotoComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
