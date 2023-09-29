@@ -21,5 +21,40 @@
         "After two experimental EPs, his first album \"Family Reunion\" gathers most of the people that allowed him to go further in the musical world and therefore to ground his mycelium deeply into the soil. A real family reunion full of suprises that will bring you deep in the dark forest filled with energy."
       ]
     }
+  ],
+  "discography": [
+    {
+      "id": 1,
+      "title": "Brotherhood",
+      "image": "",
+      "genre": "Dub, Dubstep",
+      "soundcloudLink": "https://soundcloud.com/mareebass/sets/mbep0103brotherhood-psiloshock-system-53",
+      "youtubeLink": "https://youtu.be/LhrQe4zPzeA?si=4Lo38jQvLYmE_6bs"
+    },
+    {
+      "id": 2,
+      "title": "Family Reunion",
+      "image": "",
+      "genre": "Dub, Dubstep, Electro",
+      "soundcloudLink": "https://soundcloud.com/mareebass/sets/mblp054-family-reunion",
+      "youtubeLink": "https://youtu.be/MlcE7JT9kKg?si=TWOiroPboxR0TM4k"
+    },
+    {
+      "id": 3,
+      "title": "Dub In The Dark",
+      "image": "",
+      "genre": "Dub, Dubstep",
+      "soundcloudLink": "https://soundcloud.com/loiclion/sets/dub-in-the-dark-free-download",
+      "youtubeLink": "https://www.youtube.com/watch?v=7xikEDI2QKs&list=PLjPzFn4rFHQHZ_OV0oN0t1IoWSxeFxyPP&ab_channel=PsiloshockDub"
+    },
+    {
+      "id": 4,
+      "title": "Space Flower",
+      "image": "",
+      "genre": "Dub, Electro",
+      "soundcloudLink": "https://soundcloud.com/loiclion/sets/space-flower-ep-free-download",
+      "youtubeLink": "https://youtu.be/9hUM0V95mws?si=f0P79o92eL9g8YN5"
+    }
   ]
+  
 }
