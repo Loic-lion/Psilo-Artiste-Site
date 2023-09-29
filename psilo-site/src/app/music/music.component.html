@@ -1,9 +1,49 @@
 <main>
   <section>
-    <article>lecteur soundcloud</article>
     <article>
+      <iframe
+        width="60%"
+        height="350"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/loiclion&amp;"
+      >
+      </iframe>
+      <div
+        style="
+          font-size: 10px;
+          color: #cccccc;
+          line-break: anywhere;
+          word-break: normal;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          font-family: Interstate, Lucida Grande, Lucida Sans Unicode,
+            Lucida Sans, Garuda, Verdana, Tahoma, sans-serif;
+          font-weight: 100;
+        "
+      >
+        <a
+          href="https://soundcloud.com/loiclion"
+          title="Psiloshock Dub"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >Psiloshock Dub</a
+        >
+        ·
+        <a
+          href="https://soundcloud.com/loiclion/psiloshock-blondi-mechanical-sun/s-qxa9x3vY4Dj"
+          title="Psiloshock &amp; Blondi - Mechanical Sun"
+          target="_blank"
+          style="color: #cccccc; text-decoration: none"
+          >Psiloshock &amp; Blondi - Mechanical Sun</a
+        >
+      </div>
+    </article>
+    <article *ngIf="musicData">
       <h2>Album & EP</h2>
-      <div *ngFor="let cd of musicData">
+      <div *ngFor="let cd of musicData.discography">
         <h3>{{ cd.title }}</h3>
         <img [src]="cd.image" alt="Artwork for  " />
         <p>Genre: {{ cd.genre }}</p>

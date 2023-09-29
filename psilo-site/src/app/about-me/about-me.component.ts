@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { DataAboutService } from '../services/data-about.service';
+import { DataService } from '../services/data-about.service';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -11,16 +11,17 @@ export class AboutMeComponent implements OnInit, OnDestroy {
   aboutMeData: any;
   private dataSubscription!: Subscription;
 
-  constructor(private dataAboutService: DataAboutService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
     console.log('Abonnement créé');
-    this.dataAboutService.getAboutMe().subscribe((data) => {
+    this.dataService.getData().subscribe((data) => {
       this.aboutMeData = data;
     });
+    this.dataSubscription = new Subscription();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     console.log('Abonnement détruit');
     if (this.dataSubscription) {
       this.dataSubscription.unsubscribe();

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DataMusicService } from '../services/data-music.service';
+import { DataService } from '../services/data-about.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-music',
@@ -8,12 +9,21 @@ import { DataMusicService } from '../services/data-music.service';
 })
 export class MusicComponent implements OnInit {
   musicData: any;
+  private dataSubscription!: Subscription;
 
-  constructor(private dataMusicService: DataMusicService) {}
+  constructor(private dataService: DataService) {}
 
   ngOnInit(): void {
-    this.dataMusicService.getMusic().subscribe((data) => {
+    console.log('Abonnement music créé');
+    this.dataService.getData().subscribe((data) => {
       this.musicData = data;
     });
+  }
+
+  ngOnDestroy() {
+    console.log('Abonnement music détruit');
+    if (this.dataSubscription) {
+      this.dataSubscription.unsubscribe();
+    }
   }
 }

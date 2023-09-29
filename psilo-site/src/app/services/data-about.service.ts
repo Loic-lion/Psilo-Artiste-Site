@@ -5,12 +5,12 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class DataAboutService {
-  private aboutMeUrl = '../assets/json/about-me.json';
+export class DataService {
+  private dataUrl = '../assets/json/about-me.json';
 
   constructor(private http: HttpClient) {}
 
-  getAboutMe(): Observable<string> {
-    return this.http.get<string>(this.aboutMeUrl);
+  getData(): Observable<string> {
+    return this.http.get<string>(this.dataUrl);
   }
 }

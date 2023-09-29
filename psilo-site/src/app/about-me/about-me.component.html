@@ -1,7 +1,7 @@
 <main>
   <article *ngIf="aboutMeData">
     <h2>About me</h2>
-    <img [src]="aboutMeData.biography[0].photo" alt="Photo de Psiloshock" />
+    <img [src]="aboutMeData.biography[0].photo" alt="Photo of Psiloshock" />
     <div *ngFor="let bio of aboutMeData.biography">
       <h3>{{ bio.language }}</h3>
       <div *ngFor="let paragraph of bio.paragraphs">

@@ -10,7 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MusicComponent } from './music/music.component';
 import { TourDateComponent } from './tour-date/tour-date.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
+
 import { PhotoComponent } from './photo/photo.component';
 
 @NgModule({
@@ -22,7 +22,6 @@ import { PhotoComponent } from './photo/photo.component';
     MusicComponent,
     TourDateComponent,
     AboutMeComponent,
-    ContactMeComponent,
     PhotoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
