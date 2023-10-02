@@ -1,1 +1,26 @@
-<p>photo works!</p>
+<main>
+  <h2>Gallery</h2>
+  <div *ngIf="photoData" class="container__gallery-lightbox">
+    <div class="container__gallery-lightbox__box">
+      <div
+        *ngFor="let data of photoData.Photo; let i = index"
+        class="container__gallery-lightbox__box__img"
+      >
+        <img
+          (click)="onPreviewImage(data.src, i)"
+          [src]="data.src"
+          [alt]="data.alt"
+        />
+      </div>
+    </div>
+  </div>
+  <div *ngIf="showModal">
+    <app-modal-gallery
+      [imageUrl]="selectedImageUrl"
+      [show]="showModal"
+      [imageUrls]="imageUrls"
+      [currentIndex]="currentIndex"
+      (close)="onCloseModal()"
+    ></app-modal-gallery>
+  </div>
+</main>

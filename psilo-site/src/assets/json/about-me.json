@@ -1,7 +1,7 @@
 {
   "biography": [
     {
-      "photo": "url"
+      "photo": "../../assets/img/imagebio.jpg"
     },
     {
       "language": "fr",
@@ -114,10 +114,30 @@
     }
   ],
 
-  "Photo" : [
+  "Photo": [
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image2.jpg"
+    },
     {
       "alt": "Scène de Falk'Hom SoundSytem",
       "src": "../../assets/img/image1.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image3.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image4.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image5.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image6.jpg"
     },
     {
       "alt": "Scène de Falk'Hom SoundSytem",
