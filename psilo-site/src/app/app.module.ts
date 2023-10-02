@@ -10,8 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { MusicComponent } from './music/music.component';
 import { TourDateComponent } from './tour-date/tour-date.component';
 import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
+
 import { PhotoComponent } from './photo/photo.component';
+import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +23,8 @@ import { PhotoComponent } from './photo/photo.component';
     MusicComponent,
     TourDateComponent,
     AboutMeComponent,
-    ContactMeComponent,
     PhotoComponent,
+    ModalGalleryComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

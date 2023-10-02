@@ -1,7 +1,7 @@
 {
   "biography": [
     {
-      "photo": "url"
+      "photo": "../../assets/img/imagebio.jpg"
     },
     {
       "language": "fr",
@@ -20,6 +20,128 @@
         "Influenced by several styles, his work is an authentic musical melting pot between hip hop, electro and dubstep while incorporating a few samples of movies and TV shows that meant something to him.",
         "After two experimental EPs, his first album \"Family Reunion\" gathers most of the people that allowed him to go further in the musical world and therefore to ground his mycelium deeply into the soil. A real family reunion full of suprises that will bring you deep in the dark forest filled with energy."
       ]
+    }
+  ],
+  "discography": [
+    {
+      "id": 1,
+      "title": "Brotherhood",
+      "image": "../../assets/img/image2.jpg",
+      "genre": "Dub, Dubstep",
+      "soundcloudLink": "https://soundcloud.com/mareebass/sets/mbep0103brotherhood-psiloshock-system-53",
+      "youtubeLink": "https://youtu.be/LhrQe4zPzeA?si=4Lo38jQvLYmE_6bs"
+    },
+    {
+      "id": 2,
+      "title": "Family Reunion",
+      "image": "../../assets/img/image4.jpg",
+      "genre": "Dub, Dubstep, Electro",
+      "soundcloudLink": "https://soundcloud.com/mareebass/sets/mblp054-family-reunion",
+      "youtubeLink": "https://youtu.be/MlcE7JT9kKg?si=TWOiroPboxR0TM4k"
+    },
+    {
+      "id": 3,
+      "title": "Dub In The Dark",
+      "image": "../../assets/img/image5.jpg",
+      "genre": "Dub, Dubstep",
+      "soundcloudLink": "https://soundcloud.com/loiclion/sets/dub-in-the-dark-free-download",
+      "youtubeLink": "https://www.youtube.com/watch?v=7xikEDI2QKs&list=PLjPzFn4rFHQHZ_OV0oN0t1IoWSxeFxyPP&ab_channel=PsiloshockDub"
+    },
+    {
+      "id": 4,
+      "title": "Space Flower",
+      "image": "../../assets/img/image6.jpg",
+      "genre": "Dub, Electro",
+      "soundcloudLink": "https://soundcloud.com/loiclion/sets/space-flower-ep-free-download",
+      "youtubeLink": "https://youtu.be/9hUM0V95mws?si=f0P79o92eL9g8YN5"
+    }
+  ],
+
+  "Date": [
+    {
+      "id": 1,
+      "date": "28/09/2021",
+      "place": "LLN",
+      "name": "Reggae Night"
+    },
+    {
+      "id": 2,
+      "date": "28/01/2022",
+      "place": "LLN",
+      "name": "Festivités Festives"
+    },
+    {
+      "id": 3,
+      "date": "20/04/2022",
+      "place": "LLN",
+      "name": "Welcom Spring Festival"
+    },
+    {
+      "id": 4,
+      "date": "22/06/2022",
+      "place": "LLN",
+      "name": "NoName"
+    },
+    {
+      "id": 5,
+      "date": "07/10/2022",
+      "place": "Online",
+      "name": "Sortie EP Brotherhood"
+    },
+    {
+      "id": 6,
+      "date": "22/04/2023",
+      "place": "Chez Zelle - LLN",
+      "name": "Festi'Zelle"
+    },
+    {
+      "id": 7,
+      "date": "12/05/2023",
+      "place": "Ferme du Biéreau/Corps & Logis - LLN",
+      "name": "Benefit' CL"
+    },
+    {
+      "id": 8,
+      "date": "22/09/2023",
+      "place": "Ferme du Biéreau/Corps & Logis - LLN",
+      "name": "Inauguration Caveaux"
+    },
+    {
+      "id": 9,
+      "date": "????",
+      "place": "????",
+      "name": "????"
+    }
+  ],
+
+  "Photo": [
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image2.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image1.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image3.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image4.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image5.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image6.jpg"
+    },
+    {
+      "alt": "Scène de Falk'Hom SoundSytem",
+      "src": "../../assets/img/image1.jpg"
     }
   ]
 }

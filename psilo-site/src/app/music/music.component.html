@@ -1,1 +1,38 @@
-<p>music works!</p>
+<main>
+  <section>
+    <article>
+      <iframe
+        width="60%"
+        height="350"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/loiclion&amp;"
+      >
+      </iframe>
+    
+    </article>
+    <article *ngIf="musicData">
+      <h2>Album & EP</h2>
+      <div *ngFor="let cd of musicData.discography">
+        <h3>{{ cd.title }}</h3>
+        <img [src]="cd.image" alt="Artwork for  " />
+        <p>Genre: {{ cd.genre }}</p>
+        <ul>
+          <li>
+            <a [href]="cd.soundcloudLink"
+              ><img
+                src="../../assets/img/soundcloud.png"
+                alt="Icon of Soundcloud"
+            /></a>
+          </li>
+          <li>
+            <a [href]="cd.youtubeLink"
+              ><img src="../../assets/img/youtube.png" alt="Icon of Youtube"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </article>
+  </section>
+</main>

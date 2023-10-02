@@ -1,0 +1,7 @@
+<div class="modal" *ngIf="show">
+    <button class="close-button" (click)="onClose()">X</button>
+    <button class="nav-button prev-button" (click)="prevImage()">&#8249;</button>
+    <img [src]="imageUrl" [alt]="'Large Image'" />
+    <button class="nav-button next-button" (click)="nextImage()">&#8250;</button>
+  </div>
+  
