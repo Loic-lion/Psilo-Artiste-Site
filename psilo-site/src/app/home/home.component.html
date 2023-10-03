@@ -1,5 +1,17 @@
 <main>
   <article><h3>Last Release</h3></article>
   <article><h3>Last Video</h3></article>
-  <article><h3>Last News</h3></article>
+  <article>
+    <h2>Last Post from Our Facebook Page :</h2>
+    <div *ngFor="let post of latestPosts">
+      <p>{{ post.message }}</p>
+      <a
+        [href]="
+          'https://www.facebook.com/Psiloshock/posts/' + post.id.split('_')[1]
+        "
+      >
+        <img src="../../assets/img/lien.png" alt="icon for link" />
+      </a>
+    </div>
+  </article>
 </main>
