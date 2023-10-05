@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FacebookPostService } from '../services/facebook-post.service';
-import { YoutubeVideoService } from '../services/youtube-video.service';
+import { DataService } from '../services/data-about.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -9,16 +10,25 @@ import { YoutubeVideoService } from '../services/youtube-video.service';
 })
 export class HomeComponent implements OnInit {
   latestPosts: any[] = [];
-  latestVideo: any;
+  releaseData: any;
+  private dataSubscription!: Subscription;
 
   constructor(
     private facebookService: FacebookPostService,
-    private youtubeService: YoutubeVideoService
+    private dataService: DataService
   ) {}
 
   ngOnInit() {
     this.getLatestFacebookPosts();
-    this.getLatestYoutubeVideo();
+    this.dataService.getData().subscribe((data) => {
+      this.releaseData = data;
+    });
+  }
+
+  ngOnDestroy() {
+    if (this.dataSubscription) {
+      this.dataSubscription.unsubscribe();
+    }
   }
 
   getLatestFacebookPosts() {
@@ -33,11 +43,5 @@ export class HomeComponent implements OnInit {
           error
         );
       });
-  }
-  getLatestYoutubeVideo() {
-    this.youtubeService.getLatestVideo().subscribe((data) => {
-      console.log(data);
-      this.latestVideo = data.items[0];
-    });
   }
 }
