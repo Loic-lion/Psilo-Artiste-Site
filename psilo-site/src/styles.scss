@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+@import url("https://fonts.googleapis.com/css2?family=Khand&display=swap");
+
+body {
+  background: rgb(214, 236, 195);
+  font-family: "Khand", sans-serif;
+}
