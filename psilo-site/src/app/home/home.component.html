@@ -1,20 +1,28 @@
 <main>
   <article *ngIf="releaseData?.release">
-    <h3>Last Release</h3>
+    <h2>Last Release</h2>
+    <h3>{{ releaseData.release.cd }}</h3>
     <div>
-      <h4>{{ releaseData.release.cd }}</h4>
-      <img [src]="releaseData.release.image" [alt]="releaseData.release.alt" />
+      <img
+        class="artwork-release"
+        [src]="releaseData.release.image"
+        [alt]="releaseData.release.alt"
+      />
       <ul>
         <li>
           <a [href]="releaseData.release.soundcloudLink"
             ><img
+              class="icone-social"
               src="../../assets/img/soundcloud.png"
               alt="Icon of Soundcloud"
           /></a>
         </li>
         <li>
           <a [href]="releaseData.release.youtubeLink"
-            ><img src="../../assets/img/youtube.png" alt="Icon of Youtube"
+            ><img
+              class="icone-social"
+              src="../../assets/img/youtube.png"
+              alt="Icon of Youtube"
           /></a>
         </li>
       </ul>
@@ -22,7 +30,7 @@
   </article>
 
   <article>
-    <h3>Last Video</h3>
+    <h2>Last Video</h2>
     <iframe
       src="https://www.youtube.com/embed?listType=playlist&list=UUKJR5YXH5xpBmdPbgnVZ67w"
     >

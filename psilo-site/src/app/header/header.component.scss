@@ -1,52 +1,102 @@
+@import "../../mixin.scss";
+@import "~normalize.css";
+
 header {
-  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: black;
   width: 100%;
-  height: 100px;
   color: white;
-  justify-content: space-between;
-  align-items: center;
+
   section {
     display: flex;
-    align-items: center;
-    .logo {
-      height: 80px;
-      padding: 0px 30px 0px 30px;
+    justify-content: space-between;
+    background-color: black;
+    height: 100px;
+    @include responsive-tablet {
+      height: 70px;
     }
-    h1 {
+    @include responsive-desktop {
+      height: 60px;
+    }
+
+    div {
+      padding-top: 0px;
       display: flex;
       align-items: center;
-      font-size: 50px;
-    }
-  }
-
-  .navbar {
-    ul {
-      display: flex;
-      li {
-        list-style-type: none;
-        margin-right: 40px;
-        &:last-child {
-          margin-right: 80px;
+      z-index: 10;
+      @include responsive-tablet {
+        padding-top: 10px;
+      }
+      @include responsive-desktop {
+        padding-top: 20px;
+      }
+      .logo {
+        margin-top: 10px;
+        height: 70px;
+        padding: 0px 0px 0px 0px;
+        @include responsive-tablet {
+          padding: 0px 30px 0px 30px;
         }
+        @include responsive-desktop {
+          padding: 0px 30px 0px 30px;
+        }
+      }
+      h1 {
+        line-height: 0px;
+        font-size: 40px;
+        font-family: "Unica One", cursive;
+        font-weight: 400;
+        @include responsive-tablet {
+          font-size: 45px;
+        }
+        @include responsive-desktop {
+          font-size: 50px;
+        }
+      }
+    }
 
-        a {
-          text-decoration: none;
-          font-size: 30px;
-          color: rgba(255, 255, 255, 0.658);
-          &:visited {
-            color: rgba(255, 255, 255, 0.658);
+    .navbar {
+      z-index: 10;
+      display: none;
+      @include responsive-tablet {
+        display: none;
+      }
+      @include responsive-desktop {
+        display: block;
+      }
+      ul {
+        display: flex;
+
+        li {
+          list-style-type: none;
+          padding-top: 28px;
+          margin-right: 40px;
+          &:last-child {
+            margin-right: 80px;
           }
-          &:hover {
-            transition: color 0.8s;
-            color: rgb(255, 255, 255);
-            border-bottom: 2px solid;
+
+          a {
+            text-decoration: none;
+            font-size: 30px;
+
+            color: rgba(255, 255, 255, 0.658);
+
+            &:visited {
+              color: rgba(255, 255, 255, 0.658);
+            }
+
+            &:hover {
+              transition: color 0.8s;
+              color: rgb(255, 255, 255);
+              border-bottom: 2px solid;
+            }
           }
         }
       }
     }
+  }
+  .header__svg {
+    width: 100%;
   }
 }
