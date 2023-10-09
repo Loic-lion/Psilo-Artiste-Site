@@ -1,4 +1,5 @@
 <main>
+  <section>
   <article *ngIf="releaseData?.release">
     <h2>Last Release</h2>
     <h3>{{ releaseData.release.cd }}</h3>
@@ -29,12 +30,27 @@
     </div>
   </article>
 
-  <article>
+  <article class="container__video">
     <h2>Last Video</h2>
     <iframe
       src="https://www.youtube.com/embed?listType=playlist&list=UUKJR5YXH5xpBmdPbgnVZ67w"
     >
     </iframe>
+  </article>
+  </section>
+  <section>
+  <article>
+    <h2>Last Posts on Facebook :</h2>
+    <div *ngFor="let post of latestPosts">
+      <p>{{ post.message }}</p>
+      <a
+        [href]="
+          'https://www.facebook.com/Psiloshock/posts/' + post.id.split('_')[1]
+        "
+      >
+        <img src="../../assets/img/lien.png" alt="icon for link" />
+      </a>
+    </div>
   </article>
   <article>
     <h2>Last Posts on Facebook :</h2>
@@ -49,4 +65,5 @@
       </a>
     </div>
   </article>
+</section>
 </main>
