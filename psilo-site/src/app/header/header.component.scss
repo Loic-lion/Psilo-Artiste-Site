@@ -55,10 +55,21 @@ header {
         }
       }
     }
-
+    .burger {
+      display: block;
+      background-color: #ffffff00;
+      border: none;
+      color: #eee;
+      font-size: 45px;
+      margin-right: 20px;
+      @include responsive-desktop {
+        display: none;
+      }
+    }
     .navbar {
       z-index: 10;
       display: none;
+      font-family: "Quicksand", sans-serif;
       @include responsive-tablet {
         display: none;
       }
@@ -78,7 +89,7 @@ header {
 
           a {
             text-decoration: none;
-            font-size: 30px;
+            font-size: 25px;
 
             color: rgba(255, 255, 255, 0.658);
 
