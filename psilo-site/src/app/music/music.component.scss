@@ -1,0 +1,69 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+  section {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .container__discography {
+      width: 80vw;
+      .container__discography__cd {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        row-gap: 50px;
+        margin-bottom: 100px;
+
+        &__info {
+          background-color: white;
+          border-radius: 5px;
+          box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.363);
+          padding: 15px;
+          transition: scale 0.3s;
+
+          &:hover {
+            scale: 1.05;
+          }
+
+          h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+          }
+
+          .artwork-cd {
+            height: 250px;
+          }
+          p {
+            padding: 10px;
+          }
+          .link-cd {
+            height: 80px;
+          }
+          ul {
+            display: flex;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "Khand";
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    .container__soudncloud {
+      width: 80vw;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+  }
+}
