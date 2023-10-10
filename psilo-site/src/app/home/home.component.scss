@@ -50,6 +50,7 @@ main {
         margin-bottom: 10px;
         font-weight: bold;
         font-family: "Khand";
+        text-transform: uppercase;
       }
       h3 {
         font-size: 1.5em;
@@ -125,6 +126,7 @@ main {
   }
   #second-section {
     flex-direction: column;
+    margin-top: 60px;
     .container__video {
       flex-direction: column;
       display: flex;
