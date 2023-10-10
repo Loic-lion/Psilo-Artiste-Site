@@ -4,13 +4,13 @@ main {
   align-items: center;
   min-height: calc(100vh - 200px);
   section {
-    margin-top: 140px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
     .container__discography {
-      width: 80vw;
+      width: 90vw;
       .container__discography__cd {
         display: flex;
         justify-content: space-around;

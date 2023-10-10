@@ -1,9 +1,6 @@
 {
   "biography": [
     {
-      "photo": "../../assets/img/imagebio.jpg"
-    },
-    {
       "language": "fr",
       "paragraphs": [
         "C'est au fin fond d'une forêt en 2014 que le champignon Psiloshock voit le jour et commence à répandre ses spores, partant de rien et découvrant au fur et à mesure de sa propagation la MAO.",
@@ -115,6 +112,10 @@
   ],
 
   "Photo": [
+    {
+      "alt": "Photo of Psiloshock",
+      "src": "../../assets/img/imagebio.jpg"
+    },
     {
       "alt": "Scène de Falk'Hom SoundSytem",
       "src": "../../assets/img/image2.jpg"

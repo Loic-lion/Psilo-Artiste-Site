@@ -1,3 +1,56 @@
+@import "../../mixin.scss";
+@import "~normalize.css";
+
 main {
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 240px);
+  display: flex;
+  justify-content: center;
+  margin-top: 180px;
+  article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 100px;
+    @include responsive-tablet {
+      width: 550px;
+    }
+    @include responsive-desktop {
+      width: 800px;
+    }
+    h2 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      font-family: "Khand";
+      text-transform: uppercase;
+      align-self: flex-start;
+    }
+    table {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.363);
+
+      thead {
+        tr {
+          th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
 }

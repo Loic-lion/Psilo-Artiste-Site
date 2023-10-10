@@ -1,15 +1,26 @@
+@import "../../mixin.scss";
+@import "~normalize.css";
+
 main {
-  margin-top: 130px;
+  margin-top: 180px;
   h2 {
+    padding: 0px 0px 10px 20px;
     font-size: 2.5em;
-    padding: 40px 0px 10px 25px;
     font-weight: bold;
     font-family: "Khand";
+    text-transform: uppercase;
+    align-self: flex-start;
+    @include responsive-tablet {
+      padding: 0px 0px 10px 40px;
+    }
+    @include responsive-desktop {
+      padding: 0px 0px 10px 70px;
+    }
   }
   .container__gallery-lightbox {
     position: relative;
     display: inline-block;
-    padding: 25px;
+    padding: 0px 25px 25px 25px;
     &__box {
       line-height: 0;
       column-count: 3;
