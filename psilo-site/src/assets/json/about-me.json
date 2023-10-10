@@ -71,7 +71,7 @@
       "id": 3,
       "date": "20/04/2022",
       "place": "LLN",
-      "name": "Welcom Spring Festival"
+      "name": "Welcome Spring Festival"
     },
     {
       "id": 4,
@@ -139,10 +139,6 @@
     {
       "alt": "Scène de Falk'Hom SoundSytem",
       "src": "../../assets/img/image6.jpg"
-    },
-    {
-      "alt": "Scène de Falk'Hom SoundSytem",
-      "src": "../../assets/img/image1.jpg"
     }
   ],
 

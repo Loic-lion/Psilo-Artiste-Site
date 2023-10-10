@@ -20,8 +20,13 @@
     font-weight: bolder;
     color: white;
     cursor: pointer;
-    &:hover {
-      color: rgb(187, 11, 11);
+
+    img {
+      height: 50px;
+      transition: scale 0.2s;
+      &:hover {
+        scale: 1.1;
+      }
     }
   }
   .nav-button {
@@ -29,7 +34,7 @@
     background: none;
     font-weight: bolder;
     border: none;
-    color: white;
+    color: rgba(255, 255, 255, 0.692);
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -38,10 +43,19 @@
 
   .prev-button {
     left: 10px;
+    transition: color 0.2s;
+    &:hover {
+      color: white;
+    }
   }
 
   .next-button {
     right: 10px;
+    transition: color 0.2s;
+
+    &:hover {
+      color: white;
+    }
   }
 }
 

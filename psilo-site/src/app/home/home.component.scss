@@ -30,13 +30,12 @@ main {
   }
   section {
     margin-top: 130px;
-
-    column-gap: 100px;
     display: flex;
     flex-direction: column;
     @include responsive-desktop {
+      width: 100%;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-evenly;
     }
     article {
       width: 350px;
@@ -134,12 +133,14 @@ main {
       margin-bottom: 130px;
       @include responsive-desktop {
         width: 1000px;
+        align-self: center;
       }
 
       iframe {
         align-self: center;
         width: 350px;
         height: 180px;
+        box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.363);
         @include responsive-desktop {
           width: 854px;
           height: 480px;
