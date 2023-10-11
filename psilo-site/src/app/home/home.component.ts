@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FacebookPostService } from '../services/facebook-post.service';
 import { DataService } from '../services/data-about.service';
 import { Subscription } from 'rxjs';
+import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private facebookService: FacebookPostService,
-    private dataService: DataService
+    private dataService: DataService,
+    private viewportScroller: ViewportScroller
   ) {}
 
   ngOnInit() {
@@ -29,6 +31,10 @@ export class HomeComponent implements OnInit {
     if (this.dataSubscription) {
       this.dataSubscription.unsubscribe();
     }
+  }
+
+  scrollToAnchor(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
   getLatestFacebookPosts() {

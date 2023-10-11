@@ -5,8 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class FacebookPostService {
-  private accessToken =
-    'EAAEBVaD4zNkBO9WwBTPucUTZBt5v0LzlfIM6JuWtoOU5b8beh04NRyHYmJhw77OEThWUINL65N4UyxIlvcXJezquYSVhSY5jN7IgSnejjSSRKFZAUyWTLW3cxoJ9Af8iFhMznwNh1Mx1BDaryjuVVzRstjSQZCj5YwvjhV3U8ZAi0ZAlV4U40ys73uhvn';
+  private accessToken = '???????????????????????';
   private pageId = 'Psiloshock';
 
   constructor(private http: HttpClient) {}

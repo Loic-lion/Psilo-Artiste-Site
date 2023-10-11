@@ -2,6 +2,7 @@
 @import "~normalize.css";
 
 main {
+  min-height: calc(100vh - 280px);
   margin-top: 180px;
   h2 {
     padding: 0px 0px 10px 20px;
@@ -21,10 +22,35 @@ main {
     position: relative;
     display: inline-block;
     padding: 0px 25px 25px 25px;
+
+    .swing-in-top-fwd {
+      -webkit-animation: slide-in-fwd-center 1s
+        cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+      animation: slide-in-fwd-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+        both;
+    }
+
+    @keyframes slide-in-fwd-center {
+      0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+      }
+    }
+
     &__box {
       line-height: 0;
-      column-count: 3;
-      column-gap: 30px;
+      column-count: 1;
+      column-gap: 0px;
+      @include responsive-desktop {
+        column-count: 3;
+        column-gap: 30px;
+      }
       &__img img {
         width: 100%;
         height: auto;

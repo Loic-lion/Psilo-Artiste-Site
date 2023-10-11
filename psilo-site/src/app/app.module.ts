@@ -9,7 +9,6 @@ import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { MusicComponent } from './music/music.component';
 import { TourDateComponent } from './tour-date/tour-date.component';
-import { AboutMeComponent } from './about-me/about-me.component';
 
 import { PhotoComponent } from './photo/photo.component';
 import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
@@ -22,7 +21,6 @@ import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
     FooterComponent,
     MusicComponent,
     TourDateComponent,
-    AboutMeComponent,
     PhotoComponent,
     ModalGalleryComponent,
   ],

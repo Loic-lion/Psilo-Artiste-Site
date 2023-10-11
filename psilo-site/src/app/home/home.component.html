@@ -1,8 +1,9 @@
 <main>
   <div class="cover">
-    <a id="arrow" href="#content">﹀ </a>
+    <a id="arrow" (click)="scrollToAnchor('content')">﹀</a>
   </div>
   <span id="content"></span>
+
   <section>
     <article *ngIf="releaseData?.release">
       <h2>Last Release</h2>
@@ -48,6 +49,66 @@
       </div>
     </article>
   </section>
+
+  <section id="black">
+    <article class="aboutme">
+      <h4>
+        <span id="green">D</span><span id="yellow">U</span
+        ><span id="red">B</span>
+      </h4>
+      <h4>MUSIC</h4>
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/Psiloshock" target="_blank"
+              ><img src="../../assets/img/facebook.png" alt="Facebook icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://soundcloud.com/loiclion" target="_blank"
+              ><img src="../../assets/img/soundcloud.png" alt="Soundcloud icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://psiloshock.bandcamp.com/" target="_blank"
+              ><img
+                src="../../assets/img/logo-du-bc-bandcamp.png"
+                alt="Bandcamp icon"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.mareebass.fr/psiloshock" target="_blank"
+              ><img
+                src="../../assets/img/Logo Marée BASS.webp"
+                alt="Maree Bass logo"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/user/evenslot" target="_blank"
+              ><img src="../../assets/img/youtube.png" alt="Youtube icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div>
+        <iframe
+          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPsiloshock%2Fvideos%2F2973074219576027%2F&show_text=false&width=560&t=0"
+          width="100%"
+          height="auto"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </article>
+    <article *ngIf="releaseData">
+      <div *ngFor="let bio of releaseData.biography" class="bio-carte">
+        <h3>{{ bio.language }}</h3>
+        <div *ngFor="let paragraph of bio.paragraphs">
+          <p>{{ paragraph }}</p>
+        </div>
+      </div>
+    </article>
+  </section>
+
   <section id="second-section">
     <article class="container__video">
       <iframe

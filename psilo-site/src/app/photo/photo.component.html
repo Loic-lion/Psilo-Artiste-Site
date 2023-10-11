@@ -4,7 +4,7 @@
     <div class="container__gallery-lightbox__box">
       <div
         *ngFor="let data of photoData.Photo; let i = index"
-        class="container__gallery-lightbox__box__img"
+        class="container__gallery-lightbox__box__img swing-in-top-fwd"
       >
         <img
           (click)="onPreviewImage(data.src, i)"

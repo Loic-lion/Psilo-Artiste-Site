@@ -1,7 +1,7 @@
 {
   "biography": [
     {
-      "language": "fr",
+      "language": "FR",
       "paragraphs": [
         "C'est au fin fond d'une forêt en 2014 que le champignon Psiloshock voit le jour et commence à répandre ses spores, partant de rien et découvrant au fur et à mesure de sa propagation la MAO.",
         "Après plusieurs années à expérimenter le Trip-hop, il se dirige vers son premier amour : le Dub.",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "language": "en",
+      "language": "EN",
       "paragraphs": [
         "Its deep in the woods back in 2014 that the Psiloshock mushroom began spreading its spores, starting from nowhere and discovering progresively the CAM.",
         "After a few years of experimenting trip hop he meets his first love : Dub.",
@@ -105,6 +105,12 @@
     },
     {
       "id": 9,
+      "date": "14/10/2023",
+      "place": "Serinchamps",
+      "name": "Tchestia After(cancelled)"
+    },
+    {
+      "id": 10,
       "date": "????",
       "place": "????",
       "name": "????"
