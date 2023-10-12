@@ -2,7 +2,7 @@
 @import "~normalize.css";
 
 main {
-  min-height: calc(100vh - 80px);
+  height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
  overflow: hidden;
@@ -14,6 +14,7 @@ main {
     margin-top: 180px;
     margin-bottom: 100px;
     position: relative;
+    z-index: 2;
     @include responsive-tablet {
       width: 550px;
     }
@@ -79,5 +80,17 @@ main {
       }
     }
    
+  }
+  .shroom{
+    position: absolute;
+    height: 100%;
+    z-index: 1;
+    &.left{
+      left: 0;
+    }
+    &.right {
+      right: 0;
+    }
+    
   }
 }
