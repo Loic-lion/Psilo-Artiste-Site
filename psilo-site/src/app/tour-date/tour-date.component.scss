@@ -2,22 +2,43 @@
 @import "~normalize.css";
 
 main {
-  min-height: calc(100vh - 260px);
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
-  margin-top: 180px;
+ overflow: hidden;
   article {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 350px;
+    margin-top: 180px;
     margin-bottom: 100px;
+    position: relative;
     @include responsive-tablet {
       width: 550px;
     }
     @include responsive-desktop {
       width: 90%;
+      animation: slide-top 0.8s ease-in-out, wobble 1.2s ease-in-out;
+
     }
+
+    .liane{
+      display: none;
+      background-image: url(../../assets/img/champi.svg);
+      height: 250vh;
+      width: 250px;
+      background-repeat: repeat;
+      background-position: center;
+      scale: 0.5;
+      top:-180vh;
+      @include responsive-desktop {
+        display: block;
+        position: absolute;
+      }
+    
+    
+  }
     h2 {
       font-size: 2.5em;
       margin-bottom: 10px;
@@ -25,12 +46,17 @@ main {
       font-family: "Khand";
       text-transform: uppercase;
       align-self: flex-start;
+      animation: fadeLeft 1.6s ease-in-out;
+      
     }
     table {
       background-color: white;
       border-radius: 5px;
       box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.363);
+      position: relative;
+      
 
+    
       thead {
         tr {
           th {
@@ -52,5 +78,6 @@ main {
         }
       }
     }
+   
   }
 }
