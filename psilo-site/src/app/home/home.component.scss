@@ -51,7 +51,11 @@ main {
       height: 548px;
       row-gap: 30px;
       align-self: center;
-
+      visibility: hidden;
+      &-scroll {
+        visibility: visible;
+        animation: fadeIn 0.5s ease-in-out;
+      }
       h4 {
         font-size: 60px;
         font-weight: bold;
@@ -113,8 +117,13 @@ main {
         width: 450px;
       }
 
-      .bio-carte {
+      .biocarte {
         align-self: normal;
+        visibility: hidden;
+        &-scroll {
+          visibility: visible;
+          animation: slideFromRight 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+        }
 
         &:last-child {
           margin-top: 50px;
@@ -181,6 +190,12 @@ main {
       }
     }
     .container__release {
+      visibility: hidden;
+      &.release-scroll {
+        visibility: visible;
+        animation: slideFromLeft 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+      }
+
       div {
         background-color: white;
         border-radius: 5px;
@@ -188,6 +203,12 @@ main {
       }
     }
     .container__facebook {
+      visibility: hidden;
+      &.facebook-scroll {
+        visibility: visible;
+        animation: slideFromRight 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
+      }
+
       div {
         background-color: rgba(255, 255, 255, 0.596);
         box-shadow: 1px 5px 6px 0px rgba(0, 0, 0, 0.253);
@@ -242,6 +263,12 @@ main {
       display: flex;
       width: 100%;
       margin-bottom: 130px;
+      visibility: hidden;
+      &-scroll {
+        visibility: visible;
+        animation: fadeIn 0.5s ease-in-out;
+      }
+
       @include responsive-desktop {
         margin-top: 80px;
         width: 1000px;

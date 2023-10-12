@@ -5,7 +5,13 @@
   <span id="content"></span>
 
   <section>
-    <article *ngIf="releaseData?.release" class="container__release">
+    <article
+      *ngIf="releaseData?.release"
+      [ngClass]="{
+        container__release: true,
+        'release-scroll': isScrolledFirstSection
+      }"
+    >
       <h2>Last Release</h2>
       <div>
         <img
@@ -42,7 +48,12 @@
       </div>
     </article>
 
-    <article class="container__facebook">
+    <article
+      [ngClass]="{
+        container__facebook: true,
+        'facebook-scroll': isScrolledFirstSection
+      }"
+    >
       <h2>Latest Facebook Posts</h2>
       <div *ngFor="let post of latestPosts">
         <p>{{ post.message }}</p>
@@ -59,7 +70,12 @@
   </section>
 
   <section id="black">
-    <article class="aboutme">
+    <article
+      [ngClass]="{
+        aboutme: true,
+        'aboutme-scroll': isScrolledSecondSection
+      }"
+    >
       <h4>
         <span id="green">D</span><span id="yellow">U</span
         ><span id="red">B</span>
@@ -107,7 +123,13 @@
       ></iframe>
     </article>
     <article *ngIf="releaseData">
-      <div *ngFor="let bio of releaseData.biography" class="bio-carte">
+      <div
+        *ngFor="let bio of releaseData.biography"
+        [ngClass]="{
+          biocarte: true,
+          'biocarte-scroll': isScrolledSecondSection
+        }"
+      >
         <h3>{{ bio.language }}</h3>
         <div *ngFor="let paragraph of bio.paragraphs">
           <p>{{ paragraph }}</p>
@@ -117,7 +139,12 @@
   </section>
 
   <section id="second-section">
-    <article class="container__video">
+    <article
+      [ngClass]="{
+        container__video: true,
+        'container__video-scroll': isScrolledVideoSection
+      }"
+    >
       <iframe
         src="https://www.youtube.com/embed?listType=playlist&list=UUKJR5YXH5xpBmdPbgnVZ67w"
       >
