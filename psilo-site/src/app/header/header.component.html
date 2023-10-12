@@ -1,4 +1,4 @@
-<header>
+<header [ngClass]="{ 'header-scroll': isScrolled }">
   <section>
     <div>
       <img class="logo" src="../../assets/img/logo.png" />
@@ -43,7 +43,7 @@
             routerLink="photo"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
-            >Photo</a
+            >Gallery</a
           >
         </li>
       </ul>
@@ -80,11 +80,11 @@
             routerLink="photo"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
-            >Photo</a
+            >Gallery  </a
           >
         </li>
       </ul>
     </nav>
   </section>
-  <img class="header__svg" src="../../assets/img/Sans-titre.svg" />
+  <!-- <img class="header__svg" src="../../assets/img/Sans-titre.svg" /> -->
 </header>

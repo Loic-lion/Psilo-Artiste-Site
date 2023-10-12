@@ -95,21 +95,19 @@ main {
           }
         }
       }
-      div {
-        height: auto;
-        width: 350px;
-        @include responsive-desktop {
-          width: 640px;
-          height: 360px;
-        }
-      }
+
       iframe {
         height: 100%;
         width: 100%;
+        display: none;
+        @include responsive-desktop {
+          display: block;
+        }
       }
     }
     article {
       width: 350px;
+      align-self: center;
 
       @include responsive-desktop {
         width: 450px;
@@ -143,7 +141,7 @@ main {
       }
       p {
         margin-bottom: 10px;
-        padding: 0px 15px 0px 15px;
+        padding: 0px 10px 0px 10px;
         text-align: justify;
         @include responsive-desktop {
           padding: 0px;
@@ -155,7 +153,7 @@ main {
           width: 350px;
           margin-bottom: 20px;
           border-radius: 3px;
-          box-shadow: 1px 5px 6px 0px rgba(0, 0, 0, 0.253);
+          box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.253);
           @include responsive-desktop {
             width: 450px;
           }
@@ -169,8 +167,10 @@ main {
               .icone-social {
                 height: 100px;
                 width: auto;
-
+                margin-bottom: 25px;
+                border-radius: 50%;
                 transition: scale 0.2s;
+                box-shadow: 1px 5px 6px 0px rgba(0, 0, 0, 0.253);
                 &:hover {
                   scale: 1.1;
                 }
@@ -180,7 +180,13 @@ main {
         }
       }
     }
-
+    .container__release {
+      div {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 1px 5px 6px 0px rgba(0, 0, 0, 0.253);
+      }
+    }
     .container__facebook {
       div {
         background-color: rgba(255, 255, 255, 0.596);

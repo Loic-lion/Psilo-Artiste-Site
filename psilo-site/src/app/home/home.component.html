@@ -5,7 +5,7 @@
   <span id="content"></span>
 
   <section>
-    <article *ngIf="releaseData?.release">
+    <article *ngIf="releaseData?.release" class="container__release">
       <h2>Last Release</h2>
       <div>
         <img
@@ -27,6 +27,14 @@
               ><img
                 class="icone-social"
                 src="../../assets/img/youtube.png"
+                alt="Icon of Youtube"
+            /></a>
+          </li>
+          <li>
+            <a [href]="releaseData.release.bandcampLink" target="_blank"
+              ><img
+                class="icone-social"
+                src="../../assets/img/logo-du-bc-bandcamp.png"
                 alt="Icon of Youtube"
             /></a>
           </li>
@@ -90,14 +98,13 @@
           </li>
         </ul>
       </nav>
-      <div>
-        <iframe
-          src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPsiloshock%2Fvideos%2F2973074219576027%2F&show_text=false&width=560&t=0"
-          width="100%"
-          height="auto"
-          scrolling="no"
-        ></iframe>
-      </div>
+
+      <iframe
+        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2FPsiloshock%2Fvideos%2F2973074219576027%2F&show_text=false&width=560&t=0"
+        width="100%"
+        height="auto"
+        scrolling="no"
+      ></iframe>
     </article>
     <article *ngIf="releaseData">
       <div *ngFor="let bio of releaseData.biography" class="bio-carte">

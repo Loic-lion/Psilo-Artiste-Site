@@ -6,18 +6,25 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  background-color: #00000098;
+  backdrop-filter: blur(10px);
   color: white;
   z-index: 5;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.144);
+  transition: background-color 0.5s;
+  &.header-scroll {
+    background-color: #000000;
+  }
   section {
     display: flex;
     justify-content: space-between;
-    background-color: black;
+
     height: 100px;
     @include responsive-tablet {
       height: 70px;
     }
     @include responsive-desktop {
-      height: 60px;
+      height: 80px;
     }
 
     div {
@@ -25,14 +32,8 @@ header {
       display: flex;
       align-items: center;
       z-index: 10;
-      @include responsive-tablet {
-        padding-top: 10px;
-      }
-      @include responsive-desktop {
-        padding-top: 20px;
-      }
+
       .logo {
-        margin-top: 10px;
         height: 70px;
         padding: 0px 0px 0px 0px;
         @include responsive-tablet {
