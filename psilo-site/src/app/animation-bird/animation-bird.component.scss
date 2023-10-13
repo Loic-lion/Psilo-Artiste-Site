@@ -1,0 +1,93 @@
+@import "../../mixin.scss";
+@import "~normalize.css";
+
+article {
+  display: none;
+  @include responsive-desktop {
+    height: 500px;
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    z-index: 10;
+  }
+  .bird {
+    height: 100%;
+  }
+  .note {
+    display: none;
+    @include responsive-desktop {
+      height: 40px;
+      display: block;
+      position: absolute;
+      bottom: 340px;
+      right: 200px;
+      z-index: 10;
+    }
+    &.solo {
+      animation: clocheAnimation 2s ease-in-out infinite;
+    }
+    &.double {
+      animation: clocheAnimationDouble 2.8s ease-in-out infinite;
+    }
+    &.double-two {
+      animation: clocheAnimationDoubleTwo 1.5s ease-in-out infinite;
+    }
+  }
+}
+@keyframes clocheAnimation {
+  0% {
+    opacity: 1;
+    left: 205px;
+    top: 115px;
+  }
+  50% {
+    top: -50px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: -100px;
+    opacity: 0;
+  }
+}
+
+@keyframes clocheAnimationDouble {
+  0% {
+    opacity: 1;
+    left: 210px;
+    top: 120px;
+  }
+  50% {
+    top: 0px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 80px;
+    left: -140px;
+    opacity: 0;
+  }
+}
+
+@keyframes clocheAnimationDoubleTwo {
+  0% {
+    opacity: 1;
+    left: 215px;
+    top: 125px;
+  }
+  50% {
+    top: 100px;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    top: 180px;
+    left: -140px;
+    opacity: 0;
+  }
+}

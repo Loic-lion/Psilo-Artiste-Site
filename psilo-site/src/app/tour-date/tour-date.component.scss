@@ -2,10 +2,14 @@
 @import "~normalize.css";
 
 main {
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: flex;
   justify-content: center;
- overflow: hidden;
+  overflow: hidden;
+  position: relative;
+  @include responsive-desktop {
+    height: calc(100vh - 80px);
+  }
   article {
     display: flex;
     flex-direction: column;
@@ -21,43 +25,39 @@ main {
     @include responsive-desktop {
       width: 90%;
       animation: slide-top 0.8s ease-in-out, wobble 1.2s ease-in-out;
-
     }
 
-    .liane{
+    .liane {
       display: none;
       background-image: url(../../assets/img/champi.svg);
       height: 250vh;
-      width: 250px;
+      width: 200px;
       background-repeat: repeat;
       background-position: center;
       scale: 0.5;
-      top:-180vh;
+      top: -180vh;
       @include responsive-desktop {
         display: block;
         position: absolute;
       }
-    
-    
-  }
+    }
+
     h2 {
       font-size: 2.5em;
       margin-bottom: 10px;
+      padding-left: 100px;
       font-weight: bold;
       font-family: "Khand";
       text-transform: uppercase;
       align-self: flex-start;
       animation: fadeLeft 1.6s ease-in-out;
-      
     }
     table {
       background-color: white;
       border-radius: 5px;
       box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.363);
       position: relative;
-      
 
-    
       thead {
         tr {
           th {
@@ -79,18 +79,33 @@ main {
         }
       }
     }
-   
   }
-  .shroom{
-    position: absolute;
-    height: 100%;
-    z-index: 1;
-    &.left{
+  .shroom {
+    display: none;
+    @include responsive-desktop {
+      display: block;
+      position: absolute;
+      height: 100%;
+      z-index: 1;
+    }
+    &.left {
       left: 0;
+      animation: slideFromLeft 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
     }
     &.right {
       right: 0;
+      animation: slideFromRight 0.5s ease-in-out, fadeIn 0.5s ease-in-out;
     }
-    
+  }
+  .grass {
+    display: none;
+    @include responsive-desktop {
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 10;
+      animation: slideFromBottom 0.5s ease-in-out;
+    }
   }
 }

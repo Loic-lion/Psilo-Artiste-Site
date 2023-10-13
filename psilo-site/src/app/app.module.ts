@@ -12,6 +12,7 @@ import { TourDateComponent } from './tour-date/tour-date.component';
 
 import { PhotoComponent } from './photo/photo.component';
 import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
+import { AnimationBirdComponent } from './animation-bird/animation-bird.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ModalGalleryComponent } from './modal-gallery/modal-gallery.component';
     TourDateComponent,
     PhotoComponent,
     ModalGalleryComponent,
+    AnimationBirdComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
